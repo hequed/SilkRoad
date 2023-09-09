@@ -1,0 +1,256 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #040D12;
+    color: #93B1A6;
+}
+
+.header-container {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* --- */
+}
+
+.marca-logo {
+    margin: 4px;
+    padding: 12px;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* --- */
+}
+
+.marca-logo img {
+    margin: 1px;
+    padding: 1px;
+    /* --- */
+}
+
+.logo {
+    font-size: 5.5rem;
+    color: #b7e4c7;
+    font-weight: 600;
+    cursor: default;
+    transition: text-shadow 0.5s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.navbar {
+    background: #183D3D;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0.5px;
+    padding: 10px;
+    /* --- */
+    font-size: 1.4rem;
+    color: #93B1A6;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: chartreuse;
+}
+
+.content-envoltorio {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;    
+    /* --- */
+    display: grid;
+    grid-template-rows: 1fr [row-start] 1fr [row-mid] 1fr [row-end];
+}
+
+.home {
+    background-image: url('joker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10px;
+    color: white;
+    /* --- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+}
+
+.texto-gta {
+    margin: 10px auto;
+    /* --- */
+}
+/*.home-content h1 {
+    color: white;
+    transition: text-shadow 0.5s ease;
+}
+
+.home-content h1:hover {
+    text-shadow: 0 0 5px #b7e4c7;
+}
+*/
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #52b788
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #b7e4c7;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    animation: colorCycle 5s infinite;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #b7e4c7;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: #040D12;
+    color: white;
+    box-shadow: 0 0 1rem white;
+}
+
+.spotify-button {
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+.spotify-button a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: #25D366; /* Color verde de WhatsApp */
+    border-radius: 10px;
+    box-shadow: 0 0 1rem white; /* Color verde de WhatsApp para la sombra */
+    font-size: 1.6rem;
+    color: #1E1E1E; /* Letras oscuras */
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.spotify-button a:hover {
+    background: #075E54; /* Color verde oscuro de WhatsApp */
+    box-shadow: 0 0 1rem white; /* Color verde oscuro de WhatsApp para la sombra */
+    color: #FFFFFF; /* Letras blancas */
+}
+
+.container-cards {
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* --- */
+    grid-row-start: row-mid;
+    grid-row-end: row-end;
+}
+
+.iframe {
+    margin: 15px;
+}
+
+.cards {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;    
+    background: #183D3D;
+}
+
+.footer-envoltorio {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+    background: #183D3D;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* --- */   
+}
+
+.footer-envoltorio .marca-logo {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;   
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* --- */
+}
