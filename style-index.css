@@ -120,19 +120,16 @@ body {
     padding: 20px;
 }
 
-.texto-gta {
-    margin: 10px auto;
-}
-
-/*.home-content h1 {
+.home-content h1 {
     color: white;
+    font-family: 'Playfair Display', serif;
     transition: text-shadow 0.5s ease;
+
 }
 
 .home-content h1:hover {
-    text-shadow: 0 0 5px #b7e4c7;
+    text-shadow: 0 0 5px #25D366;
 }
-*/
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -298,6 +295,9 @@ span {
     align-items: center;
 }
 
+.marca-logo h1 {
+    font-family: 'Playfair Display', serif;
+}
 
 /* MEDIAQUERYS SECTION -------------------------------------*/
 /* MEDIAQUERYS SECTION -------------------------------------*/
