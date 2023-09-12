@@ -1,0 +1,344 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #040D12;
+    color: #93B1A6;
+}
+
+/* HEADER SECTION -------------------------------------*/
+/* HEADER SECTION -------------------------------------*/
+
+.header-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.marca-logo {
+    margin: 16px;
+    padding: 12px;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.marca-logo img {
+    margin: 1px;
+    padding: 1px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    color: #b7e4c7;
+    font-weight: 600;
+    cursor: default;
+    transition: text-shadow 0.5s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.navbar {
+    background: #183D3D;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0.5px;
+    padding: 10px 20px 10px 20px;
+    /* --- */
+    font-size: 1.4rem;
+    color: #93B1A6;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #25D366;
+}
+
+.login-button a {
+    color: #25D366;
+}
+
+.login-button a:hover,
+.login-button a.active {
+    color: #ffffff;
+}
+
+
+/* HOME SECTION -------------------------------------*/
+/* HOME SECTION -------------------------------------*/
+
+.home-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    /* --- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    background-image: url('imagenes/joker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.texto-gta {
+    margin: 10px auto;
+}
+
+/*.home-content h1 {
+    color: white;
+    transition: text-shadow 0.5s ease;
+}
+
+.home-content h1:hover {
+    text-shadow: 0 0 5px #b7e4c7;
+}
+*/
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #52b788
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #b7e4c7;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    animation: colorCycle 5s infinite;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #b7e4c7;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: #040D12;
+    color: white;
+    box-shadow: 0 0 1rem white;
+}
+
+.spotify-button {
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+.spotify-button a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: #25D366; /* Color verde de WhatsApp */
+    border-radius: 10px;
+    box-shadow: 0 0 1rem white; /* Color verde de WhatsApp para la sombra */
+    font-size: 1.6rem;
+    color: #1E1E1E; /* Letras oscuras */
+    letter-spacing: .1rem;
+    font-weight: 400;
+    transition: .5s ease;
+}
+
+.spotify-button a:hover {
+    background: #075E54; /* Color verde oscuro de WhatsApp */
+    box-shadow: 0 0 1rem white; /* Color verde oscuro de WhatsApp para la sombra */
+    color: #FFFFFF; /* Letras blancas */
+}
+
+/* MIDDLE SECTION -------------------------------------*/
+/* MIDDLE SECTION -------------------------------------*/
+
+.card-container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 400px;
+    height: 180px;
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+}
+  
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background-color: #183D3D;
+    height:220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+  
+.card:hover::before {
+    transition-delay:0.2s ;
+    transform: scale(40);
+}
+  
+.card:hover {
+    color: #ffffff;
+}
+
+.card h4 {
+    font-size: 1.4em;
+}
+
+.card p {
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+/* FOOTER SECTION -------------------------------------*/
+/* FOOTER SECTION -------------------------------------*/
+
+.footer-container {
+    /* --- */
+    margin: 20px;
+    padding: 10px;
+    background: #183D3D;
+    /*border: thin solid yellow; */
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-envoltorio .marca-logo {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;   
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* MEDIAQUERYS SECTION -------------------------------------*/
+/* MEDIAQUERYS SECTION -------------------------------------*/
+
+/* Estilos generales para pantallas grandes */
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Otras reglas CSS generales */
+
+/* Estilos para pantallas medianas (360x760 a 428x926) */
+@media screen and (max-width: 428px) and (min-width: 360px) {
+  /* Modifica aquí los estilos para pantallas medianas */
+
+  html {
+    font-size: 55%; /* Reducir el tamaño de fuente para pantallas medianas */
+  }
+
+  /* Ajusta estilos de elementos específicos o añade nuevas reglas para pantallas medianas */
+  
+  .logo {
+    font-size: 4.5rem; /* Reducir el tamaño del logo */
+  }
+
+  .navbar a {
+    padding: 8px 15px; /* Ajustar el espaciado de los enlaces de navegación */
+    font-size: 1.2rem; /* Reducir el tamaño de fuente de los enlaces de navegación */
+  }
+
+  .home-content h1 {
+    font-size: 4.8rem; /* Reducir el tamaño del título principal */
+  }
+
+  .social-media a {
+    width: 3.5rem;
+    height: 3.5rem; /* Reducir el tamaño de los íconos de redes sociales */
+  }
+
+  .card {
+    width: 100%; /* Ajustar el ancho de las tarjetas para ocupar toda la pantalla */
+  }
+
+  /* Agrega estilos específicos para otras secciones o elementos según sea necesario */
+}

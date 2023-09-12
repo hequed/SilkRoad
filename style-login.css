@@ -1,0 +1,252 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #040D12;
+    color: #93B1A6;
+}
+
+/* HEADER SECTION -------------------------------------*/
+/* HEADER SECTION -------------------------------------*/
+
+.header-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.marca-logo {
+    margin: 4px;
+    padding: 12px;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.marca-logo img {
+    margin: 1px;
+    padding: 1px;
+}
+
+.logo {
+    font-size: 5.5rem;
+    color: #b7e4c7;
+    font-weight: 600;
+    cursor: default;
+    transition: text-shadow 0.5s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.navbar {
+    background: #183D3D;
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0.5px;
+    padding: 10px;
+    /* --- */
+    font-size: 1.4rem;
+    color: #93B1A6;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #25D366;
+}
+
+/* MAIN SECTION -------------------------------------*/
+/* MAIN SECTION -------------------------------------*/
+
+.main-container {
+    margin: 20px;
+    padding: 10px;
+    /* border: thin solid yellow; */
+    /* ----- */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:#b7e4c7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #183D3D;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #00000067;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #b7e4c7;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #25D366;
+    color:#1b262c;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #bbe1fa;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #25D366;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #bbe1fa;
+    margin-bottom: 3px;
+}
+
+.inferior a:hover {
+    color: #3282b8;
+}
+
+/* FOOTER SECTION -------------------------------------*/
+/* FOOTER SECTION -------------------------------------*/
+
+.footer-container {
+    /* --- */
+    margin: 20px;
+    padding: 10px;
+    background: #183D3D;
+    /* border: thin solid yellow; */
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-envoltorio .marca-logo {
+    /* --- */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;   
+    /* --- */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
